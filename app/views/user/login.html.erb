@@ -1,0 +1,37 @@
+<div class="topnav">
+  <a class="active" href="/home">Home</a>
+  <a href="/dogs">Dogs</a>
+  <a href="/cats">Cats</a>
+  <a href="/rabbits">Rabbits</a>
+  <a href="/birds">Birds</a>
+  <a href="/horses">Horses</a>
+  <a href="/contact">Contact Us</a>
+  <a href="/signup">Sign Up</a>
+  <a href="/login">Login</a>
+  <a href="/payment">Payment</a>
+</div>
+
+<div class="container3">
+   <div class="login">
+      <div class="left3"></div>
+      <div class="right3">
+      <h2>Login Here..</h2>
+    <%= form_with model:@user , url: login_path do |f| %>
+
+      <div class="field3">
+									
+				<%= f.email_field :email, :class=> "field3", :placeholder=> "Your Email" %>
+								
+      </div>
+      <div class="field3">
+								
+       <%= f.password_field :password, :class=> "field3", :placeholder=> "Your Password" %>
+							</div>
+      
+        <%= f.submit "Login" %>
+        <% end %>
+</div>
+</div>
+</div>
+
+
